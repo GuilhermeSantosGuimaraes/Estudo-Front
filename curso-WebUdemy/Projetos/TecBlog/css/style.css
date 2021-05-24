@@ -24,9 +24,12 @@ header h1{
     color: white;
 }
 
+a{
+    text-decoration: none;
+}
+
 .nav a{
     color: white;
-    text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
@@ -73,7 +76,6 @@ header h1{
 }
 
 .postagem a{
-    text-decoration: none;
     color: rgb(216, 202, 3);
     font-size: 15px;
 }
@@ -102,7 +104,6 @@ header h1{
 }
 
 .postagem-lateral a{
-    text-decoration: none;
     color: rgb(216, 202, 3);
 }
 
