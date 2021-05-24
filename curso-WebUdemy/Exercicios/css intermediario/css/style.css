@@ -1,0 +1,10 @@
+/*Seletor universal*/
+*{
+    border: 1px solid red;
+}
+
+/*Seletor de texto*/
+h1{
+    color: royalblue;
+}
+
