@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pesquisa de conhecimentos</h1>
+
+        <h2>Obrigado por participar!</h2>
+
+        <form class="formulario">
+            <label for="nome">Nome</label>
+            <!--Cria a legenda-->
+            <input type="text" id="nome" placeholder="Digite seu nome" class="form-controle">
+            <!--Cria a caixa de texto-->
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Digite seu Email" class="form-controle">
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" min="12" placeholder="Idade" class="form-controle">
+            <br>
+
+
+            <p>Defina sua escolaridade</p>
+            <select id="escolaridade" name="seletorEscolaridade" class="form-controle">
+                <option disabled selected value>Selecione uma escolaridade</option>
+                <option value="emIncompleto">Ensino Médio Incompleto</option>
+                <option value="emCompleto">Ensino Médio Completo</option>
+                <option value="emSuperior">Ensino Superior</option>
+            </select>
+            <br>
+
+            <p>Quantas horas do dia você reserva para estudos?</p>
+            <label>
+                <input type="radio" id="1hora" name="tempo" class="input-radio" checked>
+                1 Hora
+            </label>
+            <label>
+                <input type="radio" id="3hora" class="input-radio" name="tempo">
+                3 Horas
+            </label>
+            <label>
+                <input type="radio" id="6hora" class="input-radio" name="tempo">
+                6 Horas
+            </label>
+            <label>
+                <input type="radio" id="outro" class="input-radio" name="tempo">
+                Menos de 1 Hora
+            </label>
+
+            <br>
+
+            <p>Qual a categoria de contrato de trabalho que você faz parte?</p>
+            <select id="emprego" name="seletorEmprego" class="form-controle">
+                <option disabled selected value>Selecione um contrato</option>
+                <option value="clt">CLT</option>
+                <option value="pj">PJ</option>
+                <option value="estagio">Estágio</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <p>Marque as linguagens que você tem um conhecimento, mesmo que iniciante!
+                (Marque todas que você conhece)
+            </p>
+
+            <label>
+                <input type="checkbox" value="python" name="linguagem" class="input-check">
+                Python
+            </label>
+            <label>
+                <input type="checkbox" value="js" name="linguagem" class="input-check">
+                JavaScript
+            </label>
+            <label>
+                <input type="checkbox" value="java" name="linguagem" class="input-check">
+                Java
+            </label>
+            <label>
+                <input type="checkbox" value="c#" name="linguagem" class="input-check">
+                C#
+            </label>
+            <label>
+                <input type="checkbox" value="c" name="linguagem" class="input-check">
+                C
+            </label>
+            <label>
+                <input type="checkbox" value="outros" nome="linguagem" class="input-check">
+                Outros
+            </label>
+
+            <br>
+
+            <p>Fale um pouco sobre você!(opcional)</p>
+            <textarea id="descricao" name="caixaTexto" placeholder="Descreva-se em poucas linhas..."></textarea>
+
+            <br>
+
+            <button type="submit" id="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>

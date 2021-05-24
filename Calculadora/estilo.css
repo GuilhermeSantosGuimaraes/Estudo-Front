@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    background: rgb(3, 97, 121);
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    text-align:center;
+    font-size: 18px;
+}
+
+h1{
+    text-align:center;
+}
+
+.container{
+    display: inline-grid;
+    grid-template-columns: 450px auto auto;
+    background-color: rgb(72, 102, 112);
+    padding: 10px;
+}
+
+.grid-item{
+    padding: 20px 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+input{
+    padding: 2px 10px;
+    border-radius: 4px; 
+    background: rgb(72, 102, 112); 
+    color: white;
+    margin-top: 5px;
+}
+
+button{
+    padding: 15px 20px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: rgb(8, 95, 136);
+    color: white;
+    font-size: 18px;
+}
+
+select{
+    padding: 4px;
+    background: rgb(72, 102, 112); 
+    color: white;
+    font-size: 18px;
+}

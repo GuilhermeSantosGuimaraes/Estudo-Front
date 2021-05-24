@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" type="text/css" rel="stylesheet">
+    <title>Conversor de Temperatura</title>
+</head>
+
+<body>
+    <h1>Convesor de Temperaturas</h1>
+    <form>
+        <label for="valor">Valor:</label>
+        <input type="text" name="valor" id="valor" placeholder="digite a temperatura">
+        <br>
+        <label for="origem">Origem:</label>
+        <select name="origem" id="origem">
+            <option value="1" selected>fahrenheit</option>
+            <option value="2">celsius</option>
+        </select>
+        <label for="destino">Destino:</label>
+        <select name="destino" id="destino">
+            <option value="2" selected>celsius</option>
+            <option value="1">fahrenheit</option>
+        </select>
+        <br>
+        <label for="resultado">Resultado:</label>
+        <input id="resultado" />
+        <br>
+        <button onclick="converterTemperatura(event)">Converter</button>
+    </form>
+
+    <script type="text/javascript">
+        function converterTemperatura(event) {
+            event.preventDefault();
+            var valorTemp = document.getElementById("valor").value;
+            var origem = document.getElementById("origem").value;
+            var destino = document.getElementById("destino").value
+            var resultado = valorTemp;
+
+            if (origem == 1 && destino == 2) {
+                var resultado = (valorTemp - 32) / 1.8
+                document.getElementById("resultado").value = resultado;
+            }
+
+            else if (origem == 2 && destino == 1) {
+                var resultado = (valorTemp * 1.8) + 32
+                document.getElementById("resultado").value = resultado;
+            }
+
+            else {
+                alert("O destino e a origem não podem ser iguais")
+            }
+        }
+    </script>
+</body>
+
+</html>

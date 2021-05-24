@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>calculadora</title>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <div class="container">
+        <form>
+            <div class="grid-item">
+                <label for="valor1">Digite um valor</label>
+                <br>
+                <input type="number" name="valor" id="valor1">
+            </div>
+            <div class="grid-item">
+                <select id="operacao">
+                    <option value="1">+</option>
+                    <option value="2">-</option>
+                    <option value="3">*</option>
+                    <option value="4">/</option>
+                </select>
+            </div>
+            <div class="grid-item">
+                <label for="valor2">Digite outro valor</label>
+                <br>
+                <input type="number" name="valor" id="valor2">
+            </div>
+            <div class="grid-item">
+                <button onclick="calcular(event)">Calcular</button>
+                <br>
+                <input id="resultado">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

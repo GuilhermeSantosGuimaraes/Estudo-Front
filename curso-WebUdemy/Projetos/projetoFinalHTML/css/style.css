@@ -1,0 +1,56 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    align-items: center;
+}
+
+h1, h2, h3{
+    font-size: 30px;
+}
+
+hr:first-child{
+    border: solid 2px rgb(21, 33, 87);
+}
+
+p, ol{
+    font-size: 18px;
+}
+
+.container{
+    padding: 0 200px;
+}
+
+ol{
+    list-style: none;
+}
+
+ol, li{
+    display: inline-block;
+}
+
+.link{
+    float: right;
+    margin-top: 20px;
+    
+}
+
+.capa{
+    width: 100%;
+    height: auto;
+}
+
+img{
+    margin: 0 auto 10px 0
+}
+
+p{
+    text-align: justify;
+}
+
+.direitos{
+    text-align: center;
+}

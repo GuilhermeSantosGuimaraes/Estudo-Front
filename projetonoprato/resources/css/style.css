@@ -1,0 +1,297 @@
+/*Zerando as bordas para ter um controle maior da box*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility; /*otimiza a renderização da fonte para leitura, tendo uma melhor qualidade*/
+    
+}
+
+/*Configurando miha linha do sistema de grid*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+header{
+    /*Coloca uma imagem preta mas com transparencia em cima da imagem*/
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/nome_img_hero.jpg);
+    height: 100vh;/* 100% da viewport*/
+    background-size: cover;
+    background-position:center;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%; /*o tamanho de fonte padrão está definido na regra de css do elemento html como 20px*/
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1000px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;/*Para definir padding e margin de um elemento "a"*/
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s, border 0.2s;/*a transição da cor do fundo, da borda e da fonte deve demorar 0.2 segundos*/
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color:#e67e22;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    border: 1px solid #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+ion-icon{
+    font-size: 350%;/*Tamanho do icone*/
+    display: block;
+    color: #e67e22;/*Cor do icone*/
+    margin-bottom: 10px;
+}
+
+section{
+    padding: 80px 0;
+}
+
+h1, h2, h3{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/*Pseudo classe after, indica que algo vai ser colocado após a tag h2*/
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: ""; /*Conteúdo do item*/
+    width: 100%; /*Comprimento do item*/
+    margin: 0 auto; /* Centralizar item*/
+    margin-top: 30px;
+}
+
+.long-copy{
+    line-height: 145%;
+    width: 90%;
+    margin-left: 15px;
+}
+
+.box{
+    padding: 1%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+.images-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.images-showcase li{
+    display: block; /*Permite outro elemento do lado*/
+    float: left;
+    width: 25%; /*Cada item da lista terá 25% de largura em relação a tela*/
+}
+
+.photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15); /*imagem aumentada em 15%*/
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.photo img:hover{
+    opacity: 1;
+    transform: scale(1.03); /*escala da imagem com valor padrão*/
+}
+
+.section-photo{
+    padding: 0;
+}
+
+/* ----------------------------------------------- */
+/* Seção Lista de Passos (Section Steps) */
+/* ----------------------------------------------- */
+
+/*Definindo cor de fundo para essa seção*/
+
+.section-steps{
+    background-color: #f4f4f4;
+}
+
+/*Regra para selecionar apenas o primeiro box/container, neste caso será o da esquerda*/
+/*Nota: First significa Primeiro*/
+.steps-box:first-child{
+    margin-top: 30px;
+    text-align: right; /*Funciona para conteudos tipo inline como uma img*/
+    padding-right: 3%;
+}
+
+/*Regra para selecionar apenas o último box/container, neste caso será o da direita*/
+/*Nota: Last significa Último*/
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+/*Definindo o tamanho da imagem do container da esquerda*/
+.app-screen{
+    width: 40%;
+}
+
+.step{
+    margin-bottom: 50px;
+}
+
+.step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 30px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.clearfix{
+    zoom: 1;
+}
+
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}

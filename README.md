@@ -1,2 +1,2 @@
 # Estudo Front
- Repositorio de estudo para front-end web
+ Repositório de estudo para front-end web
