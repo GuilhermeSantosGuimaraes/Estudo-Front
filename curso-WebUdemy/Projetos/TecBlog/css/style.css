@@ -96,8 +96,10 @@ a{
 }
 
 .post1{
+    padding: 5px;
     margin-bottom: 40px;
 }
+
 
 .post1 hr{
     margin:10px 0 ;
