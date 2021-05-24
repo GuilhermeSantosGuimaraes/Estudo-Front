@@ -8,6 +8,7 @@ html{
     font-size: 20px;
 }
 
+/*HEADER*/
 header{
     width: auto;
     background: rgb(216, 202, 3);
@@ -43,9 +44,10 @@ a{
     border-radius: 4px;
 }
 
+/*SECTION*/
 .container{
     width: 100%;
-    margin: 10px auto;
+    margin-top: 10px;
 }
 
 .postagem{
@@ -113,6 +115,7 @@ a{
     list-style: none;
 }
 
+/*FOOTER*/
 footer{
     clear: both;
     text-align: center;
