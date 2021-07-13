@@ -1,0 +1,30 @@
+@keyframes animacao-caixa{
+    from{
+        background: red;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+
+    to{
+        background: blue;
+        border-radius: 150px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+#caixa{
+    height: 300px;
+    width: 300px;
+    background: red;
+    position: relative;
+    animation-name: animacao-caixa;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    /*Repete a animação*/
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    /*Pode ser escrito assim tambem*/
+    /*animation: animacao-caixa 5s timing-function 1s 2 alternate fill-mode;*/
+}
